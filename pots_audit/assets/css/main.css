@@ -1,0 +1,44 @@
+    @media only screen
+    and (max-width : 450px) {
+
+    .btn-test123 {
+        width: 100px !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 45px !important;
+        text-align: center;
+        padding: 0px;
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size:12px;
+        font-weight: bold;
+        color: white; }
+
+        .btn-test123:hover {
+            filter: brightness(105%);
+            color: white; }
+
+    }
+
+    @media only screen
+    and (min-width : 450px) {
+
+    .btn-test123 {
+        width: 135px !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 40px !important;
+        text-align: center;
+        padding: 0px;
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size:14px;
+        font-weight: bold;
+        color: white; }
+
+        .btn-test123:hover {
+            filter: brightness(105%);
+            color: white;
+        }
+
+}
