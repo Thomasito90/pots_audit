@@ -65,11 +65,7 @@ function findPot() {
             userInput.focus();
             userInput.value = '';
         }
-    }
-      
-    
+    }    
 }
-
-
 
 findPotBtn.addEventListener('click', findPot);
