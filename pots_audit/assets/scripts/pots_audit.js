@@ -46,9 +46,12 @@ function getUserInput() {
 function findPot() {
 
     let barcode = getUserInput();
+    let potFound = false;
     
     for (let i = 0; i < drugs.length; i++) {
         if (barcode == drugs[i].UniqueId) {
+
+            potFound = true;
 
             let element = document.getElementById(barcode);
             let progressBar = document.getElementById('myProgressBar');
@@ -65,7 +68,11 @@ function findPot() {
             userInput.focus();
             userInput.value = '';
         }
-    }    
+    }
+
+    if (potFound === false) {
+        alert('Pot not found!');
+    }
 }
 
 findPotBtn.addEventListener('click', findPot);
